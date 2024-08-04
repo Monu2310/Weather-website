@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Nunito:wght@400;700&family=Open+Sans:ital,wght@1,300&family=Poppins&family=Roboto&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* || RESET */
+
 
 * {
     padding: 0;
@@ -10,7 +10,7 @@
 }
 
 
-/* || ROOT */
+
 
 :root {
     /* COLORS */
@@ -34,7 +34,7 @@ body {
 }
 
 
-/* || STARTING */
+
 
 .container {
     position: relative;
@@ -53,7 +53,6 @@ body {
 }
 
 
-/* || NAVIGATION BAR */
 
 nav {
     display: flex;
@@ -115,7 +114,6 @@ nav {
 }
 
 
-/* Hamburger */
 
 .hamburger {
     display: none;
@@ -136,7 +134,7 @@ nav {
 }
 
 
-/* || MAIN WEATHER REPORT BOX */
+
 
 .current-status {
     display: flex;
@@ -164,7 +162,6 @@ nav {
 }
 
 
-/* || BOX-1 */
 
 .weather-box1 {
     background: linear-gradient(to right bottom, #b7f1f3, #feddcd);
@@ -269,7 +266,6 @@ nav {
 }
 
 
-/* || BOX-2 */
 
 .weather-box2 {
     background: #FFD8E7;
@@ -277,7 +273,7 @@ nav {
 }
 
 
-/* || MORE DETAILS BOX */
+
 
 .more-detail-box {
     width: 100%;
@@ -323,7 +319,6 @@ nav {
 }
 
 
-/* || UVI RAYS BOX */
 
 .uvi-rays-area {
     display: flex;
@@ -361,7 +356,6 @@ nav {
 }
 
 
-/* || HOURLY TEMPERATURE */
 
 .hourly-temperature {
     display: flex;
@@ -381,7 +375,6 @@ nav {
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
     border-radius: var(--STANDERED-RADIUS);
     background: linear-gradient(to right bottom, #4EA6E5, #b7f1f3);
@@ -412,7 +405,6 @@ nav {
 }
 
 
-/* || SLIDEBAR */
 
 .slidebar {
     display: flex;
@@ -426,7 +418,6 @@ nav {
     padding: 20px 15px;
     overflow-y: scroll;
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
     z-index: 3;
 }
@@ -449,7 +440,6 @@ nav {
 }
 
 
-/* Air quality Prediction */
 
 .slidebar .aqi-prediction {
     position: relative;
@@ -496,7 +486,6 @@ nav {
 }
 
 
-/* || 6 DAYS FORECAST */
 
 .weather-prediction {
     display: flex;
@@ -566,7 +555,6 @@ nav {
 }
 
 
-/* || FOOTER */
 
 footer {
     height: 60px;
@@ -590,7 +578,7 @@ footer .copyright {
 }
 
 
-/* || RESPONSIVENESS */
+
 
 @media screen and (max-width: 1020px) {
     .weather-report {
