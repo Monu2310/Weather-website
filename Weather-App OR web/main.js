@@ -1,4 +1,3 @@
-//  || TOGGLE HAMBURGER BAR
 const hamburger = document.querySelector('.hamburger');
 const slidebar = document.querySelector('.slidebar');
 
@@ -7,14 +6,12 @@ hamburger.addEventListener('click', () => {
     slidebar.classList.toggle('active');
 })
 
-// || copyrights
+
 const copyright = document.getElementById('copyright');
 copyright.innerHTML = new Date().getFullYear();
 
 
-// || MAIN WEATHER FUNCTIONALITY
 
-// Navigation
 var city = document.getElementById('city');
 var country = document.getElementById('country');
 var searchCity = document.getElementById('search');
@@ -55,7 +52,7 @@ var responseData;
 var monthName = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 var weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-// || FUNCTION FOR GET WEATHER REPORT
+
 async function weatherReport(searchCity) {
 
     weatherApi = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=da2103b2c4ce4f95af051626232503&q=${searchCity}&days=7&aqi=yes&alerts=no`);
@@ -97,7 +94,7 @@ function todayWeatherReport() {
 }
 
 
-// || Functions for do some task
+
 function checkUVraysIndex() {
 
     let uviLevel = Number.parseInt(uviRays.textContent);
@@ -124,7 +121,7 @@ function checkUviValue(level, color) {
 }
 
 
-// || Hours 
+
 function hoursWeatherReport() {
 
     hoursTemp.forEach((t, i) => {
@@ -136,7 +133,7 @@ function hoursWeatherReport() {
     })
 }
 
-// Days
+
 function forecastdayReport() {
 
     daysIcon.forEach((icon, index) => {
